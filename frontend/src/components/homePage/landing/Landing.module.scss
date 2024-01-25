@@ -1,0 +1,73 @@
+.landingContainer {
+  display: flex;
+  padding: 5%;
+}
+
+.landingTitleContainer {
+  width: 60%;
+  direction: ltr;
+  .linksContainer {
+    display: flex;
+  }
+  .landingTitle {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    h1 {
+      font-size: 2rem;
+      color: #3f2305;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    button {
+      border-radius: 50px;
+      padding: 1.5%;
+      border: none;
+      width: 30%;
+      transition: 0.3s ease-in-out;
+      a {
+        font-size: 1rem;
+        display: inline;
+      }
+    }
+  }
+  .productsBtn {
+    background-color: #8d7b68;
+    margin-right: 5%;
+    a {
+      color: #ffffff;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #3f2305;
+      transform: scale(1.1);
+    }
+  }
+  .loginSignupBtn {
+    background-color: #e7e0d1;
+
+    a {
+      color: #3f2305;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #3f2305;
+      transform: scale(1.1);
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.landingImg {
+  width: 40%;
+  direction: rtl;
+
+  img {
+    width: 450px;
+    height: 450px;
+  }
+}

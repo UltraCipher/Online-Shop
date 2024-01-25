@@ -1,0 +1,18 @@
+.servicesBar {
+  // background-color: aqua;
+  padding: 5%;
+  h2 {
+    text-align: center;
+  }
+  .servicesBarIcons {
+    // background-color: burlywood;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1rem;
+      display: inline;
+    }
+  }
+}

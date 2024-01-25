@@ -1,0 +1,12 @@
+/// login
+http://localhost:4000/api/login
+
+inputs:email and password
+
+
+//register
+http://localhost:4000/auth/register
+
+inputs:email, phone, password, confirmpassword
+
+

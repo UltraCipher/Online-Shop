@@ -1,0 +1,31 @@
+.ErrorConteiner {
+  padding: 5%;
+  height: 50vh;
+  text-align: center;
+
+  h1 {
+    color: #3f2305;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  button {
+    background-color: #9c9389;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    padding: 1%;
+    width: 15%;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: #7b736b;
+    }
+    a {
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+}
