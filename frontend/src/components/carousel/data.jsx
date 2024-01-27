@@ -4,7 +4,7 @@ export const dataCarousel = [
     title: "lorem ipsum",
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-    image: "/pic1.jpg",
+    image: "/img1.jpg",
   },
 
   {
@@ -12,7 +12,7 @@ export const dataCarousel = [
     title: "lorem ipsum",
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-    image: "/pic1.jpg",
+    image: "/img2.jpg",
   },
 
   {
@@ -20,7 +20,7 @@ export const dataCarousel = [
     title: "lorem ipsum",
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-    image: "/pic1.jpg",
+    image: "/img8.jpg",
   },
 
   {
@@ -28,7 +28,7 @@ export const dataCarousel = [
     title: "lorem ipsum",
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-    image: "/pic1.jpg",
+    image: "/img7.jpg",
   },
 
   {
@@ -36,6 +36,6 @@ export const dataCarousel = [
     title: "lorem ipsum",
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-    image: "./pic1.jpg",
+    image: "./pic4.jpg",
   },
 ];

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import styles from "./FrequentlyAsked.module.scss";
-import pic1 from "/pic1.jpg";
+import img5 from "/img5.jpg";
 
 const AllQuestions = [
   {
@@ -66,7 +66,7 @@ function FrequentlyAsked() {
   return (
     <div className={styles.frequentlyAskedContainer}>
       <div className={styles.frequentlyAskedIcon}>
-        <img src={pic1} />
+        <img src={img5} />
       </div>
 
       <div className={styles.customMenu}>
