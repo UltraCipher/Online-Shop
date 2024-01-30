@@ -9,7 +9,7 @@ class WeblogDetails extends Component {
       <div>
         <React.Fragment>
           <div className={styles.weblogsTitle}>
-            <h2>Weblogs</h2> |{" "}
+            <h2>Weblogs</h2>
             <p>
               <Link to="/weblog">View all weblogs </Link>
             </p>

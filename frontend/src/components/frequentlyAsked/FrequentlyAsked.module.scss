@@ -11,31 +11,37 @@
   display: flex;
   margin: auto;
   padding-bottom: 6%;
-}
-select {
-  font-size: 1.2rem;
-  width: 50%;
-  margin: auto;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  transition: all 0.3s ease-in-out;
-  padding: 15px 20px;
-  background-color: #dbdfea;
-  text-align: center;
-  border-radius: 10px;
-  color: #000;
-  &:hover {
-    background-color: #adb4c5;
+  margin-top: 4%;
+  select {
+    font-size: 1.2rem;
+    width: 70%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #967e76;
+    padding: 1%;
+    text-align: center;
+    border-radius: 100px;
+    color: #ffffff;
+    &:hover {
+      background-color: #3f2305;
+    }
+    option {
+      background-color: #f1ede9;
+      font-size: 1rem;
+      color: #000;
+      &:hover {
+        background-color: #3f2305;
+        color: #ffffff;
+      }
+    }
   }
 }
-option {
-  background-color: #dbdfea;
-  font-size: 1rem;
-}
+
 .accordion {
   width: 100%;
   max-width: 1000px;
@@ -59,7 +65,6 @@ option {
 .answer {
   margin-top: 20px;
   font-size: 1rem;
-  color: #455276;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0, 4, 0, 4);
@@ -69,16 +74,8 @@ option {
   transition: all 0.3s cubic-bezier(0, 2, 0, 2);
 }
 .accordionIcon {
-  color: #8d7b68;
+  color: #3f2305;
   font-weight: bold;
   font-size: 1.7rem;
   margin-left: 10px;
-}
-.frequentlyAskedIcon {
-  padding: 2%;
-  img {
-    width: 170px;
-    height: 170px;
-    border-radius: 100%;
-  }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import styles from "./FrequentlyAsked.module.scss";
-import img5 from "/img5.jpg";
+import ContactUs from "./contactus";
 
 const AllQuestions = [
   {
@@ -65,53 +65,42 @@ function FrequentlyAsked() {
 
   return (
     <div className={styles.frequentlyAskedContainer}>
-      <div className={styles.frequentlyAskedIcon}>
-        <img src={img5} />
-      </div>
-
       <div className={styles.customMenu}>
         <select value={selectedGroup} onChange={handleGroupChange}>
           <option value="all">All Questions</option>
-          <option value="Category1">
-            <li>Category1</li>
-          </option>
-          <option value="Category2">
-            <li>Category2</li>
-          </option>
-          <option value="Category3">
-            <li>Category3</li>
-          </option>
+          <option value="Category1">Category1</option>
+          <option value="Category2">Category2</option>
+          <option value="Category3">Category3</option>
         </select>
       </div>
 
       <div className={styles.accordion}>
-        {filteredAllQuestions.map((item) => (
+        {filteredAllQuestions.map((item, index) => (
           <div className={styles.item} key={item.id}>
-            <div className={styles.question} onClick={() => toggle(item.id)}>
+            <div className={styles.question} onClick={() => toggle(index)}>
               <h2>{item.question}</h2>
               <span className={styles.accordionIcon}>
-                {selected === item.id ? <BsChevronUp /> : <BsChevronDown />}
+                {selected === index ? <BsChevronUp /> : <BsChevronDown />}
               </span>
             </div>
 
             <div
-              className={
-                selected === item.id ? styles.answerShow : styles.answer
-              }
+              className={selected === index ? styles.answerShow : styles.answer}
             >
               {item.answer}
             </div>
 
             <hr
               style={{
-                borderColor: "#B7C4CF",
-                border: "2px solid #B7C4CF",
+                borderColor: "#F1EDE9",
+                border: "2px solid #F1EDE9",
                 borderRadius: "50px",
               }}
             />
           </div>
         ))}
       </div>
+      <ContactUs />
     </div>
   );
 }
