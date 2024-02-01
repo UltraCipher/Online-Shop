@@ -1,11 +1,21 @@
+.contactUsContainer {
+  background-color: #f1ede9;
+  padding: 2%;
+  margin: 5%;
+  border-radius: 10px;
+  width: 80%;
+  P {
+    font-size: 1.1rem;
+  }
+}
 .wrapper {
   display: inline-flex;
   list-style: none;
   height: 120px;
   width: 100%;
-  padding-top: 40px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
+  padding-top: 3%;
 }
 
 .wrapper .icon {
@@ -63,23 +73,23 @@
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
+.wrapper .WhatsApp:hover,
+.wrapper .WhatsApp:hover .tooltip,
+.wrapper .WhatsApp:hover .tooltip::before {
+  background: #25d366;
   color: #fff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1da1f2;
+.wrapper .Telegram:hover,
+.wrapper .Telegram:hover .tooltip,
+.wrapper .Telegram:hover .tooltip::before {
+  background: #27a7e7;
   color: #fff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+  background-color: #bc2a8d;
   color: #fff;
 }
