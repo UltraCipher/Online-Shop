@@ -1,6 +1,8 @@
 import React from "react";
 import "./Contactus.scss";
 import { FaInstagram } from "react-icons/fa6";
+import { BiFontSize, BiLogoTelegram } from "react-icons/bi";
+import { BsWhatsapp } from "react-icons/bs";
 
 function ContactUs() {
   return (
@@ -22,17 +24,20 @@ function ContactUs() {
           <ul class="wrapper">
             <li class="icon WhatsApp">
               <span class="tooltip">WhatsApp</span>
+              <BsWhatsapp style={{ fontSize: "1.4rem" }} />
               <span>
                 <i class="fab fa-WhatsApp-f"></i>
               </span>
             </li>
             <li class="icon Telegram">
+              <BiLogoTelegram style={{ fontSize: "1.4rem" }} />
               <span class="tooltip">Telegram</span>
               <span>
                 <i class="fab fa-Telegram"></i>
               </span>
             </li>
             <li class="icon instagram">
+              <FaInstagram style={{ fontSize: "1.4rem" }} />
               <span class="tooltip">Instagram</span>
               <span>
                 <i class="fab fa-instagram"></i>
