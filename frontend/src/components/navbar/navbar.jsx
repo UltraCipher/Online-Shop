@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 import { BsBookmarks, BsBasket, BsSlashLg, BsCheckLg } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -31,10 +31,10 @@ const Navbar = () => {
 
         <div className={styles.navbarLinks}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <NavLink to="/products">Products</NavLink>
           </li>
           <li>
             <div
@@ -46,10 +46,10 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <Link to="/weblogs">Blogs</Link>
+            <NavLink to="/weblogs">Blogs</NavLink>
           </li>
           <li>
-            <Link to="/frequentlyAsked">Frequently Asked</Link>
+            <NavLink to="/frequentlyAsked">Frequently Asked</NavLink>
           </li>
         </div>
       </div>
@@ -57,22 +57,22 @@ const Navbar = () => {
       <div className={styles.navbarIcons}>
         <div className={styles.iconContainer}>
           <li>
-            <Link to="/cart">
+            <NavLink to="/cart">
               <BsBasket />
-            </Link>
+            </NavLink>
           </li>
         </div>
 
         <button className={styles.loginSignupBtn}>
           <li>
             {isLogin ? (
-              <Link to="/login">
-                <FaRegUser fontSize="1.2em" /> &nbsp; Login
-              </Link>
+              <NavLink to="/login">
+                <FaRegUser fontSize="1.2em" /> &nbsp; Login{" "}
+              </NavLink>
             ) : (
-              <Link to="/dashboard">
+              <NavLink to="/dashboard">
                 <IoSettingsOutline fontSize="1.2em" /> &nbsp; Dashboard
-              </Link>
+              </NavLink>
             )}
           </li>
         </button>

@@ -1,8 +1,12 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
-import SignUp from "./components/form/SignUp";
 import Login from "./components/form/Login";
 import Navbar from "./components/navbar/navbar";
 import HomePage from "./components/pages/homePage";
@@ -16,14 +20,10 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route exact path="/login" element={<Login />}></Route>
-          <Route exact path="/signup" element={<SignUp />}></Route>
-          <Route
-            exact
-            path="/frequentlyAsked"
-            element={<FrequentlyAsked />}
-          ></Route>
           <Route exact path="/" element={<HomePage />}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Navigate to="/login" replace />} />
+          <Route path="/frequentlyAsked" element={<FrequentlyAsked />}></Route>
           <Route exact path="/*" element={<Error404 />}></Route>
         </Routes>
         <Footer />
