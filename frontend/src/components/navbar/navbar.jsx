@@ -21,57 +21,53 @@ const Navbar = () => {
 
   const isLogin = false;
   return (
-    <div className={styles.navbarMainContainer}>
-      <div className={styles.navbarLogo}>
-        <h1>
+    <div className={styles.Container}>
+      <div className={styles.navbarLinks}>
+        <div className={styles.logo}>
           <Link to="/">
             <h1>Venti-Shop</h1>
           </Link>
-        </h1>
-
-        <div className={styles.navbarLinks}>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/products">Products</NavLink>
-          </li>
-          <li>
-            <div
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Link>Category</Link>
-              {isDropdownVisible && <DropdownItems />}
-            </div>
-          </li>
-          <li>
-            <NavLink to="/weblogs">Blogs</NavLink>
-          </li>
-          <li>
-            <NavLink to="/frequentlyAsked">Frequently Asked</NavLink>
-          </li>
         </div>
+
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/products">Products</NavLink>
+        </li>
+        <li>
+          <NavLink to="/weblogs">Blogs</NavLink>
+        </li>
+        <li>
+          <NavLink to="/frequentlyAsked">Frequently Asked</NavLink>
+        </li>
+        <li>
+          <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <Link>About Us</Link>
+            {isDropdownVisible && <DropdownItems />}
+          </div>
+        </li>
       </div>
 
-      <div className={styles.navbarIcons}>
-        <div className={styles.iconContainer}>
-          <li>
-            <NavLink to="/cart">
-              <BsBasket />
-            </NavLink>
-          </li>
-        </div>
+      <div className={styles.navbarbuttons}>
+        <button className={styles.basketBtn}>
+          <NavLink to="/cart">
+            <li>
+              <BsBasket fontSize="1.2rem" />
+            </li>
+          </NavLink>
+        </button>
 
-        <button className={styles.loginSignupBtn}>
+        <button className={styles.loginBtn}>
           <li>
             {isLogin ? (
               <NavLink to="/login">
-                <FaRegUser fontSize="1.2em" /> &nbsp; Login{" "}
+                <FaRegUser fontSize="1.2rem" /> Login
               </NavLink>
             ) : (
               <NavLink to="/dashboard">
-                <IoSettingsOutline fontSize="1.2em" /> &nbsp; Dashboard
+                <IoSettingsOutline fontSize="1.2rem" />
+                Dashboard
               </NavLink>
             )}
           </li>

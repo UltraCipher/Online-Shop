@@ -10,10 +10,11 @@
     display: flex;
   }
   .landingTitle {
-    width: 50%;
+    max-width: 40%;
+    min-height: 10%;
     position: absolute;
     top: 50%;
-    margin-top: -25px;
+    margin-top: -30px;
     h1 {
       font-size: 2rem;
       color: #3f2305;

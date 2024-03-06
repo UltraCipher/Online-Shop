@@ -1,33 +1,29 @@
-.navbarMainContainer {
+.Container {
+  align-items: center;
   margin: 0;
   top: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
   z-index: 15;
   // background: #ffc7f7;
-  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.32);
-}
-
-.navbarLogo {
-  align-items: center;
-  // background-color: #1a73e8;
-  display: flex;
-  margin: 0 5%;
-  width: 80%;
-  h1 {
-    color: #3f2305;
-    font-size: 2rem;
-    text-transform: none;
-  }
+  display: grid;
+  grid-template-columns: 80% 20%;
 }
 
 .navbarLinks {
   display: flex;
-  justify-content: space-between;
   // background-color: #1a73e8;
-  margin-left: 5%;
+  max-width: 100%;
+  .logo {
+    // background-color: #1ae81d;
+    margin-right: 2%;
+    h1 {
+      color: #3f2305;
+      font-size: clamp(1.3rem, 2.3vw, 2rem);
+      text-transform: none;
+    }
+  }
+
   li {
     position: relative;
     font-size: 1rem;
@@ -63,48 +59,49 @@
   }
 }
 
-.navbarIcons {
-  // background-color: #1a73e8;
+.navbarbuttons {
+  // background-color: #1ae81d;
+  min-width: 20%;
+  justify-content: space-between;
   display: flex;
-  align-items: center;
-  margin: 0 5%;
-  .iconContainer {
-    li {
-      font-size: 1.3rem;
-    }
-  }
-  .loginSignupBtn {
-    background-color: #efefef;
+
+  button {
+    padding: 4%;
     border: none;
     border-radius: 100px;
-    width: 170px;
-    padding: 6%;
     transition: 0.3s ease-in-out;
-    margin-left: 5%;
+    cursor: pointer;
+    text-align: center;
+
     li {
-      text-align: center;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: middle;
+      vertical-align: middle;
     }
-    a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-      text-align: center;
-    }
+  }
+  .basketBtn {
+    background-color: #efefef;
+    min-width: 20%;
+    min-height: 20%;
     &:hover {
-      background-color: #8d7b68;
-      cursor: pointer;
-      a {
-        color: #fff;
+      li {
+        color: #95714a;
       }
     }
   }
-  a {
-    color: #000;
+  .loginBtn {
+    width: 100%;
+    margin-left: 2%;
+    background-color: #3f2305;
+    color: #ffffff;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    font-size: 1rem;
+
     &:hover {
-      cursor: pointer;
-      color: #8d7b68;
-      transition: 0.2s ease-out;
+      background-color: #95714a;
     }
   }
 }
@@ -115,7 +112,7 @@
   background-color: #ffffff;
   border: #e9e9e9 1px solid;
   border-radius: 10px;
-  width: fit-content;
+  max-width: fit-content;
   position: absolute;
   padding: 27%;
   p {

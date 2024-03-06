@@ -1,31 +1,61 @@
 .ErrorConteiner {
-  padding: 5%;
-  height: 50vh;
-  text-align: center;
+  height: 100vh;
+  margin: auto;
+  padding: 10px;
+  padding: 20% 0;
 
   h1 {
-    color: #3f2305;
+    color: #000000;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
-  p {
-    font-size: 1rem;
-  }
-  button {
-    background-color: #9c9389;
-    cursor: pointer;
-    border-radius: 50px;
-    border: none;
-    padding: 1%;
-    width: 15%;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      background-color: #7b736b;
-    }
-    a {
-      color: #fff;
+  .errorGuid {
+    // background-color: #b8eece;
+    display: flex;
+
+    p {
       font-size: 1rem;
+      margin-top: 2%;
+      margin-bottom: 3%;
     }
+  }
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #ded0b6;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .cta li {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #5f564b;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #ebe3d5;
+  }
+  .cta:active {
+    transform: scale(0.95);
   }
 }
